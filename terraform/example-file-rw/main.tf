@@ -1,3 +1,9 @@
+variable "text" {
+  type    = string
+  default = "hello world"
+}
+
+
 terraform {
   required_providers {
     null = {
@@ -16,6 +22,6 @@ terraform {
 ## create a null resource that creates test.txt file with hello world
 resource "null_resource" "test" {
   provisioner "local-exec" {
-    command = "echo 'hello world' > test.txt"
+    command = "echo '${var.text}' > test.txt"
   }
 }

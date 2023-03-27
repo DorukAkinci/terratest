@@ -19,3 +19,7 @@ output "status" {
   value = jsonencode(data.http.curl.status_code)
 }
 
+output "url" {
+  value = data.http.curl.url
+}
+

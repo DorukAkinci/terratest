@@ -6,8 +6,9 @@ import (
 	//"github.com/gruntwork-io/terratest/modules/random"
 	"github.com/gruntwork-io/terratest/modules/terraform"
 	//test_structure "github.com/gruntwork-io/terratest/modules/test-structure"
-	"github.com/stretchr/testify/assert"
 	"io/ioutil"
+
+	"github.com/stretchr/testify/assert"
 )
 
 // TEST READ WRITE FILE
